@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-display: "Poppins", sans-serif;
+}
+
+/* From Uiverse.io by VD232004 */
+.card {
+  width: 335px;
+  height: 150px;
+  border-radius: 20px;
+  background: #19203f;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #1de9b6;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+  overflow: visible;
+}
+
+.card-details {
+  color: white;
+  height: 100%;
+  gap: 0.5em;
+  display: grid;
+  place-content: center;
+}
+
+.text-body {
+  color: rgb(162, 0, 255);
+}
+
+/*Text*/
+.text-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
