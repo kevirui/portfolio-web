@@ -1,6 +1,6 @@
 # 📌 Portafolio web como hoja de vida ( website like CV )
 
-Este es mi portafolio web, iré actualizando y agregando mas features a medida que tengas mas habilidades.
+Este es mi portafolio web, iré actualizando y agregando mas features a medida que tengas mas habilidades. <br/>
 This is my website, i'll upgrade and add more features when i improve my abilities and knowledge.
 
 ---
@@ -21,7 +21,7 @@ This is my website, i'll upgrade and add more features when i improve my abiliti
 
 ## 📝 Acerca del proyecto/About
 
-> Este proyecto será mi portafolio web.
+> Este proyecto será mi portafolio web. <br/>
 > This project will be my website.
 
 ---
@@ -85,7 +85,6 @@ http://localhost:3000
 ```bash
 
 portfolio-web/
-
 │── src/             # code/código fuente
 │   ├── components/  # components
 │   ├── hooks/  # hooks
@@ -104,14 +103,14 @@ portfolio-web/
 
 ## 📜 Licencia/License
 
-Pueden usar este proyecto como quieran, como plantilla para su sitio web o portafolio.
-Free to use.
+> Pueden usar este proyecto como quieran, como plantilla para su sitio web o portafolio. <br/>
+> Free to use.
 
 ## 📬 Contacto/Contact
 
-Kevin Agustin Ruiz
+**Kevin Agustin Ruiz**
 
-Si quieres saber más sobre mí o mis proyectos, puedes encontrarme aquí:
+Si quieres saber más sobre mí o mis proyectos, puedes encontrarme aquí: <br/>
 If you want to know more about me or my projects, you can find me here:
 
 - 📧 [Email](mailto:kevinagustinrockz@gmail.com)
