@@ -1,10 +1,8 @@
 import { Outlet } from "react-router-dom";
 import { useCallback } from "react";
-import Particles from "react-tsparticles";
-import type { Engine } from "tsparticles-engine";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import { loadStarsPreset } from "tsparticles-preset-stars";
+import Particles from "@tsparticles/react";
+import type { Container, Engine } from "@tsparticles/engine";
+import { loadStarsPreset } from "@tsparticles/preset-stars";
 import HeaderLayout from "./HeaderLayout";
 import FooterLayout from "./FooterLayout";
 
@@ -13,6 +11,13 @@ export default function AppLayout() {
     await loadStarsPreset(engine);
   }, []);
 
+  const particlesLoaded = useCallback(
+    async (container: Container | undefined) => {
+      await console.log(container);
+    },
+    []
+  );
+
   return (
     <>
       <div className="relative font-display max-w-7xl mx-auto px-4 md:px-8 min-h-screen flex flex-col justify-between text-white font-normal h-screen snap-y snap-mandatory overflow-y-scroll">
@@ -20,6 +25,7 @@ export default function AppLayout() {
         <Particles
           id="tsparticles"
           init={particlesInit}
+          loaded={particlesLoaded}
           options={{
             preset: "stars",
             background: {
@@ -40,13 +46,6 @@ export default function AppLayout() {
 
         {/* Footer */}
         <FooterLayout />
-
-        {/* Alertas Toast */}
-        <ToastContainer
-          pauseOnHover={false}
-          autoClose={3000}
-          pauseOnFocusLoss={false}
-        />
       </div>
     </>
   );
